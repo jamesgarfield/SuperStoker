@@ -58,9 +58,8 @@ function eventRouter(context) {
 }
 
 function goBack() {
-	clicker('#leave');
-	clicker('#goback');
-	clicker('#goodbye');
+	var btns = $('#event .button');
+	clicker('#' + btns[btns.length - 1].id)();
 	return true;
 }
 
