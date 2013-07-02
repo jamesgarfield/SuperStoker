@@ -54,6 +54,10 @@ function eventRouter(context) {
 			handleNomad(context);
 			break;
 
+		case 'A Beast Attack':
+			handleBeast(context);
+			break;
+
 	}
 }
 
@@ -130,5 +134,9 @@ function handleScout(context) {
 function handleNomad(context) {
 	var buyCompass = clicker('#buyCompass');
 	buyCompass();
+	goBack();
+}
+
+function handleBeast(context) {
 	goBack();
 }
