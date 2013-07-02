@@ -140,3 +140,12 @@ function handleNomad(context) {
 function handleBeast(context) {
 	goBack();
 }
+
+function getStore(name) {
+	var rowName = '#row_' + name;
+	var val = $(rowName + ' .row_val');
+	if (val && val.length) {
+		var count = parseInt(val.text());
+	}
+	return count;
+}
