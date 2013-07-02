@@ -121,7 +121,9 @@ function handleScout(context) {
 	var buyMap = clicker('#buyMap');
 	learn();
 	var nMax = 10;
-	while (nMax-- && buyMap()) {};
+	while (nMax > 0 && buyMap()) {
+		nMax--;
+	};
 	goBack();
 }
 
